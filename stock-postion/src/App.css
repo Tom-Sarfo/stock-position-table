@@ -1,0 +1,13 @@
+.drugItem {
+	width: 400px;
+	padding: 0.5rem;
+}
+
+.drugItem paper {
+	padding: 0.5rem;
+}
+
+.drugName {
+	color: #ff9a02;
+	font-weight: 700;
+}
