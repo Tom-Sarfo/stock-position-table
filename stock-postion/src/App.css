@@ -1,5 +1,10 @@
+.StockPositionContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .drugItem {
-	width: 400px;
+	width: 450px;
 	padding: 0.5rem;
 }
 
