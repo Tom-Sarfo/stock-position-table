@@ -16,3 +16,20 @@
 	color: #ff9a02;
 	font-weight: 700;
 }
+
+.DrugDetailTable {
+	border-collapse: collapse;
+}
+
+.DrugDetailTable tr:nth-of-type(3) {
+	border-top: 1px solid #dfdfdf;
+	color: rgb(139, 136, 136);
+}
+.DrugDetailTable tr:nth-of-type(2n) {
+	color: rgb(139, 136, 136);
+	border-top: 1px solid #dfdfdf;
+}
+
+.DrugDetailTable td {
+	padding: 0.5rem;
+}
