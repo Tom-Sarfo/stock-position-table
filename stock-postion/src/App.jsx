@@ -5,16 +5,12 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import "./App.css";
-import DrugListCard from "./DrugListCard";
+import StockPosition from "./stockPosition";
 
 function App() {
 	return (
 		<div className="StockPositionContainer">
-			<Stack spacing={1}>
-				<DrugListCard />
-				<DrugListCard />
-				<DrugListCard />
-			</Stack>
+			<StockPosition />
 		</div>
 	);
 }

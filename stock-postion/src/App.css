@@ -3,9 +3,12 @@
 }
 .StockPositionContainer {
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: center;
 	flex-direction: column;
+	background-color: #dfdfdf;
+	height: 100vh;
+	overflow-y: scroll;
 }
 .drugItem {
 	width: 450px;

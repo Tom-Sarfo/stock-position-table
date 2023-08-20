@@ -5,7 +5,7 @@ import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import DrugDetails from "./DrugDetails";
 import { useState } from "react";
 
-export default function DrugListCard() {
+export default function DrugListCard({ DrugData }) {
 	const [expandDrugDetail, setExpandDrugDetail] = useState(false);
 
 	function handleDetailExpansion() {
@@ -14,32 +14,34 @@ export default function DrugListCard() {
 	return (
 		<Paper className="drugItem">
 			<table>
-				<tr>
-					<td>ID:</td>
-					<td colSpan={2} style={{ borderBottom: "2px solid #F1C232" }}>
-						GH45385
-					</td>
-					<td align="right">
-						<MoreVertIcon />
-					</td>
-				</tr>
-				<tr>
-					<td>
-						{expandDrugDetail === false ? (
-							<ExpandMoreIcon onClick={handleDetailExpansion} />
-						) : (
-							<ExpandLessIcon onClick={handleDetailExpansion} />
-						)}
-					</td>
-					<td colSpan={2} width={430}>
-						<p className="drugName">Augmentin Syrup x10</p>
-					</td>
-					<td>
-						<b>¢20</b>
-					</td>
-				</tr>
+				<tbody>
+					<tr>
+						<td>ID:</td>
+						<td colSpan={2} style={{ borderBottom: "2px solid #F1C232" }}>
+							GH45385
+						</td>
+						<td align="right">
+							<MoreVertIcon />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							{expandDrugDetail === false ? (
+								<ExpandMoreIcon onClick={handleDetailExpansion} />
+							) : (
+								<ExpandLessIcon onClick={handleDetailExpansion} />
+							)}
+						</td>
+						<td colSpan={2} width={430}>
+							<p className="drugName">{DrugData.DrugName}</p>
+						</td>
+						<td>
+							<b>¢{DrugData.PriceList}</b>
+						</td>
+					</tr>
+				</tbody>
 			</table>
-			<DrugDetails ExpandDetail={expandDrugDetail} />
+			<DrugDetails ExpandDetail={expandDrugDetail} drug={DrugData} />
 		</Paper>
 	);
 }
