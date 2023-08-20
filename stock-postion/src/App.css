@@ -1,7 +1,11 @@
+* {
+	font-family: Roboto;
+}
 .StockPositionContainer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 .drugItem {
 	width: 450px;

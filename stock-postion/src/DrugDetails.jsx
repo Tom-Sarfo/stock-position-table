@@ -1,6 +1,5 @@
 import { Chip } from "@mui/material";
 import "./App.css";
-import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import BoltIcon from "@mui/icons-material/Bolt";
 export default function DrugDetails({ ExpandDetail }) {
 	return (
