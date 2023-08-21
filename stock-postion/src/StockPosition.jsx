@@ -29,8 +29,8 @@ export default function StockPosition() {
 			<Stack spacing={1}>
 				{drugData.map((drug) => (
 					<div key={drug.Number}>
-						<DrugListCard DrugData={drug} />
-					</div>make
+						<DrugListCard drug={drug} />
+					</div>
 				))}
 			</Stack>
 		</div>

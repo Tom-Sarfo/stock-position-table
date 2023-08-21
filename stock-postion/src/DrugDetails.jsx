@@ -1,7 +1,7 @@
 import { Chip } from "@mui/material";
 import "./App.css";
 import BoltIcon from "@mui/icons-material/Bolt";
-export default function DrugDetails({ ExpandDetail, drug }) {
+export default function DrugDetails({ drug, ExpandDetail }) {
 	return (
 		<div>
 			{ExpandDetail === true && (

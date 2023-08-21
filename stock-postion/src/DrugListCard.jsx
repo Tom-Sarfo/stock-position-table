@@ -1,16 +1,18 @@
 import { Paper } from "@mui/material";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import DrugDetails from "./DrugDetails";
+import BasicMenu from "./menu";
+
 import { useState } from "react";
 
-export default function DrugListCard({ DrugData }) {
+export default function DrugListCard({ drug }) {
 	const [expandDrugDetail, setExpandDrugDetail] = useState(false);
 
 	function handleDetailExpansion() {
 		setExpandDrugDetail(!expandDrugDetail);
 	}
+
 	return (
 		<Paper className="drugItem">
 			<table>
@@ -21,7 +23,7 @@ export default function DrugListCard({ DrugData }) {
 							GH45385
 						</td>
 						<td align="right">
-							<MoreVertIcon />
+							<BasicMenu />
 						</td>
 					</tr>
 					<tr>
@@ -33,15 +35,15 @@ export default function DrugListCard({ DrugData }) {
 							)}
 						</td>
 						<td colSpan={2} width={430}>
-							<p className="drugName">{DrugData.DrugName}</p>
+							<p className="drugName">{drug.DrugName}</p>
 						</td>
 						<td>
-							<b>¢{DrugData.PriceList}</b>
+							<b>¢{drug.PriceList}</b>
 						</td>
 					</tr>
 				</tbody>
 			</table>
-			<DrugDetails ExpandDetail={expandDrugDetail} drug={DrugData} />
+			<DrugDetails ExpandDetail={expandDrugDetail} drug={drug} />
 		</Paper>
 	);
 }

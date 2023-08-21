@@ -40,3 +40,17 @@
 .DrugDetailTable td {
 	padding: 0.5rem;
 }
+
+.menu {
+	position: absolute;
+	z-index: 9;
+	background-color: #ff9a02;
+	border-radius: 0.2rem;
+	margin-left: -5rem;
+	/* top: 0px; */
+}
+.menuList {
+	/* position: absolute; */
+}
+.hamburger {
+}
