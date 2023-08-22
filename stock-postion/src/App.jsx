@@ -4,12 +4,10 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import "./App.css";
 import StockPosition from "./StockPosition";
-import FilterBar from "./FilterBar";
 
 function App() {
 	return (
 		<div className="StockPositionContainer">
-			<FilterBar />
 			<StockPosition />
 		</div>
 	);

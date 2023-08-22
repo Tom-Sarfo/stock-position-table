@@ -18,7 +18,7 @@ export default function DrugDetails({ drug, ExpandDetail }) {
 									variant="contained"
 									size="small"
 									sx={{
-										background: "#ff9a02",
+										background: "#FF5100",
 										color: "white",
 									}}
 								/>
