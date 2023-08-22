@@ -11,7 +11,7 @@ export default function DrugDetails({ drug, ExpandDetail }) {
 							<td>
 								<b>Drug details</b>
 							</td>
-							<td align="right">
+							<td>
 								<Chip
 									icon={<BoltIcon />}
 									label="Movable"
@@ -21,6 +21,7 @@ export default function DrugDetails({ drug, ExpandDetail }) {
 										background: "#FF5100",
 										color: "white",
 									}}
+									className="chip"
 								/>
 							</td>
 						</tr>
@@ -29,7 +30,7 @@ export default function DrugDetails({ drug, ExpandDetail }) {
 								<b>Availability</b>
 							</td>
 							<td align="center">
-								<b>{drug.Availability}pks</b>
+								<b className="RightAlignSmallScreen">{drug.Availability}pks</b>
 							</td>
 						</tr>
 						<tr>
@@ -37,7 +38,7 @@ export default function DrugDetails({ drug, ExpandDetail }) {
 								<b>Old Price</b>
 							</td>
 							<td align="center">
-								<b>¢19</b>
+								<b className="RightAlignSmallScreen">¢19</b>
 							</td>
 						</tr>
 						<tr>
@@ -49,7 +50,7 @@ export default function DrugDetails({ drug, ExpandDetail }) {
 								)}
 							</td>
 							<td align="center">
-								<b>¢0.00</b>
+								<b className="RightAlignSmallScreen">¢0.00</b>
 							</td>
 						</tr>
 					</tbody>

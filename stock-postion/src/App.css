@@ -47,6 +47,14 @@
 	padding: 0.5rem;
 }
 
+.RightAlignTD {
+	display: flex;
+}
+
+.chip {
+	margin-right: -30px;
+}
+
 .menu {
 	position: absolute;
 	z-index: 9;
@@ -57,13 +65,20 @@
 
 .FilterBar {
 	width: 100%;
-
 	top: 0px;
 }
 
-@media (min-width: 400px) {
+@media (max-width: 500px) {
 	.drugItem {
 		width: 320px;
 		padding: 0.5rem;
+	}
+
+	.chip {
+		margin-right: 100px;
+	}
+
+	.RightAlignSmallScreen {
+		margin-right: 100px;
 	}
 }
