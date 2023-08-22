@@ -25,7 +25,7 @@ export default function StockPosition() {
 		fetchData();
 	}, []);
 	return (
-		<div>
+		<div className="drugList">
 			<Stack spacing={1}>
 				{drugData.map((drug) => (
 					<div key={drug.Number}>

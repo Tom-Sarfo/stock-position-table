@@ -1,14 +1,19 @@
 * {
 	font-family: Roboto;
 }
+
 .StockPositionContainer {
 	display: flex;
-	/* justify-content: center; */
 	align-items: center;
 	flex-direction: column;
 	background-color: #dfdfdf;
 	height: 100vh;
+	width: 100%;
 	overflow-y: scroll;
+}
+
+.drugList {
+	margin-top: 3.5rem;
 }
 .drugItem {
 	width: 450px;
@@ -47,10 +52,10 @@
 	background-color: #ff9a02;
 	border-radius: 0.2rem;
 	margin-left: -5rem;
-	/* top: 0px; */
 }
-.menuList {
-	/* position: absolute; */
-}
-.hamburger {
+
+.FilterBar {
+	width: 100%;
+
+	top: 0px;
 }
