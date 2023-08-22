@@ -10,6 +10,8 @@
 	height: 100vh;
 	width: 100%;
 	overflow-y: scroll;
+	overflow-x: hidden;
+
 	padding: 0.5rem;
 }
 
@@ -47,10 +49,6 @@
 	padding: 0.5rem;
 }
 
-.RightAlignTD {
-	display: flex;
-}
-
 .chip {
 	margin-right: -30px;
 }
@@ -70,7 +68,7 @@
 
 @media (max-width: 500px) {
 	.drugItem {
-		width: 320px;
+		max-width: 320px;
 		padding: 0.5rem;
 	}
 
@@ -80,5 +78,9 @@
 
 	.RightAlignSmallScreen {
 		margin-right: 100px;
+	}
+
+	.drugList {
+		margin-right: 0px;
 	}
 }
